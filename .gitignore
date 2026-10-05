@@ -1,0 +1,22 @@
+# Virtual environment
+.venv/
+venv/
+
+# Database
+*.db
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# PDF reports
+*.pdf
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# pytest cache
+.pytest_cache/
+.coverage
