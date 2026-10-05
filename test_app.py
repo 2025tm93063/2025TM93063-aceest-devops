@@ -1,9 +1,8 @@
 import os
 import pytest
-import sqlite3
 import tempfile
 
-from app import app, init_db, calculate_calories, PROGRAMS, get_db
+from app import app, init_db, calculate_calories, PROGRAMS
 
 
 @pytest.fixture
