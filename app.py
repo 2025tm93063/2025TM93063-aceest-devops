@@ -347,5 +347,7 @@ def health():
 
 
 if __name__ == "__main__":
-    init_db()
-    app.run(host="0.0.0.0", port=8081, debug=False)
+    init_db()                    # ← NEW LINE: runs on every startup (flask run, gunicorn, Docker, etc.)
+                                                                                                                                                                                                    
+  if __name__ == "__main__":                                                                                                                                                                        
+      app.run(host="0.0.0.0", port=8081, debug=False)
