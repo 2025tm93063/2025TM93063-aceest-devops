@@ -42,7 +42,7 @@ ACEest is a Flask-based fitness gym management web application. Features:
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/<your-username>/aceest-devops.git
+git clone https://github.com/2025tm93063/2025TM93063-aceest-devops.git
 cd aceest-devops
 
 # 2. Create virtual environment
@@ -156,10 +156,10 @@ Jenkins provides a secondary BUILD environment — it pulls the latest code from
 ```
 GitHub Push
     │
-    ▼
+    
 Jenkins Webhook
     │
-    ▼
+    
 ┌──────────────────────────────────┐
 │  Stage 1: Checkout from GitHub   │
 │  Stage 2: Install dependencies   │
@@ -177,7 +177,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 git branch: 'main',
-                    url: 'https://github.com/<your-username>/aceest-devops.git'
+                    url: 'https://github.com/2025tm93063/2025TM93063-aceest-devops.git'
             }
         }
         stage('Install') {
